@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <input type="text" onkeypress="winmessage(this.value)">
+        <script>
+            window.onload = function(){
+                win = window.open('jsw19c.html','ot');
+            }
+            function winmessage(msg){
+                win.document.getElementById('message').innerText = msg;
+            }
+        </script>
+    </body>
+</html>
